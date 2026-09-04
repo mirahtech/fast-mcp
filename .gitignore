@@ -4,3 +4,8 @@
 
 # Ignore gem files
 *.gem
+
+# The demo app is never built, tested or released (see fast-mcp.gemspec and
+# .github/workflows). A committed lockfile there only pins stale, vulnerable
+# gem versions that show up in security scans.
+/examples/rails-demo-app/Gemfile.lock
